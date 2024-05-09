@@ -1,193 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0"
+        nonce="UGDSTI1C"></script>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <i class="fa-solid fa-soap"></i>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qr">QR Code</a></li>
+            <li><a href="#qa">Q&A</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <button onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <div class="anchor" id="about"></div>
+    <section id="about-section">
+        <h2>About Me</h2>
+        <p>Hello, I'm just an average guy, dragged into extraordinary circumstances. By day, I'm a cog in the corporate
+            machine, but by night, my life takes on a darker shade, thanks to my alter ego.</p>
+    </section>
+
+    <div class="anchor" id="photos"></div>
+    <section id="photos-section">
+        <h2>My Photos</h2>
+        <p>Here are moments of my life, caught between the mundane daylight and the thrilling, yet terrifying nights.
+            These photos capture the dual nature of my existence.</p>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="narrator1.jpeg" alt="Photo 1" class="carousel-image">
+                <img src="narrator2.jpg" alt="Photo 2" class="carousel-image">
+                <img src="narrator3.jpg" alt="Photo 3" class="carousel-image">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <div class="anchor" id="playlist"></div>
+    <section id="playlist-section">
+        <h2>My Playlist</h2>
+        <p>Listen to the melodies that narrate my double life. Each song reflects the internal battle and the quiet
+            desperation of a man caught in his own duality.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kirdmu-hm4A" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <div class="anchor" id="like"></div>
+    <section id="like-section">
+        <h2>Like</h2>
+        <p>Connect with the quieter side of life at MyQuietDesperation.com. It's a place for those who seek
+            understanding in the quieter, introspective moments of life.</p>
+        <div class="fb-like" data-href="https://github.com/WED-2023/340915149" data-share="false" ,
+            data-layout="button_count" , data-size="large"></div>
+    </section>
+
+    <div class="anchor" id="qr"></div>
+    <section id="qr-section">
+        <h2>QR Code</h2>
+        <p>Scan here to access a world of introspection, articles on self-discovery, and resources to help you balance
+            the chaos of dual existence.</p>
+        <img src="qr.png" alt="QR" class="qr-image">
+    </section>
+
+    <div class="anchor" id="qa"></div>
+    <section id="qa-section">
+        <h2>Q&A</h2>
+        <p>Answers to frequently asked questions about my struggles with identity, purpose, and web development:
+        <div>
+            <br>
+            <strong>Q: List three main differences between web1, web2 and web3.</strong>
+            <br>
+            <br>
+            A:
+            <h4>Ownership and Control:</h4>
+            <ul>
+                <li>Web1: Static, read-only websites with centralized hosting.</li>
+                <li>Web2: Interactive, user-generated content with centralized control by platform providers.</li>
+                <li>Web3: Decentralized using blockchain, with data ownership distributed among users.</li>
+            </ul>
+            <h4>Technology and Interaction:</h4>
+            <ul>
+                <li>Web1: Basic HTML, minimal interaction.</li>
+                <li>Web2: Advanced technologies like AJAX and JavaScript enable interactive experiences.</li>
+                <li>Web3: Utilizes blockchain and decentralized apps for peer-to-peer interactions.</li>
+            </ul>
+            <h4>Economic Model:</h4>
+            <ul>
+                <li>Web1: Monetization through advertising and subscriptions.</li>
+                <li>Web2: Targeted advertising and data-driven monetization strategies.</li>
+                <li>Web3: Token-based economies where users can earn and have financial stakes.</li>
+            </ul>
+            <br>
+            <strong>Q: Explain the differences stated in question 1 by an example of a use case</strong>
+            <br>
+            <br>
+            A: For the query "how to make soap":
+            <ul>
+                <li><strong>Web1:</strong> A static webpage detailing a basic soap-making process.</li>
+                <li><strong>Web2:</strong> Interactive tutorials on platforms like YouTube, with comments and user-generated tips.</li>
+                <li><strong>Web3:</strong> A decentralized platform where users share soap-making techniques, validated by the community, with contributors earning tokens for quality contributions.</li>
+            </ul>
+        </div>
+        </p>
+    </section>
+
+    <div class="anchor" id="contact"></div>
+    <section class="id-section">
+        <h2>Contact Me</h2>
+        <p>Reach out to explore the stark contrasts of day-to-day compliance and the enthralling call to disrupt it.
+            Whether you're grappling with the pressures of modern life or ready to challenge the status quo, we're here
+            to talk.</p>
+        <p class="mail">You can email me at: <a href="mailto:narrator@post.bgu.ac.il">narrator@post.bgu.ac.il</a></p>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
