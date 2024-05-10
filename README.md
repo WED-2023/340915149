@@ -1,6 +1,8 @@
 # **Fight Club: The Narrator/Tyler Durden Experience**
 Welcome to the GitHub repository for the Fight Club-themed website, an interactive and dynamic portrayal of the dual characters of the Narrator and Tyler Durden from the iconic movie "Fight Club."
 
+By Yuriy Rusanov (340915149)
+
 ## About the Site
 This website is a creative exploration of the dual personalities of the main character from "Fight Club." It features various sections (e.g. "About Me", "Photos", "Playlist") each reflecting the characteristics and tastes of the Narrator and Tyler Durden characters. Users can switch between these two personas by toggling the site's theme from light to dark.
 
