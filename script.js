@@ -3,15 +3,15 @@ const darkThemeImages = ["tyler1.jpg", "tyler2.jpg", "tyler3.webp"];
 const darkThemeAboutText = "I'm Tyler Durden, and if you're reading this, you're probably looking for a way out. I'm the liberator of your deepest desires, the architect of mayhem. Together, we can break the chains of modern life's monotony.";
 const darkThemePhotosText = "Feast your eyes on the revolution. Here are snapshots of our underground escapades and the anarchy I've sculpted. You won't find these in your local newspaper.";
 const darkThemePlaylistText = "This playlist is the soundtrack to our rebellion. Each track, a hymn of chaos and liberation, is chosen to fuel our nightly endeavors and stir the soul of every Project Mayhem recruit.";
-const darkThemeLikeText = "Like what you see? Dive deeper into the chaos at ProjectMayhem.com, where you can join the ranks and redefine your existence.";
-const darkThemeQrText = "Scan this code. It's your ticket to freedom, exclusive events, and real-time updates from the belly of the beast. Welcome to the fight.";
+const darkThemeLikeText = "Like what you see? Dive deeper into the chaos, where you can join the ranks and redefine your existence.";
+const darkThemeQrText = "Scan this code. It's your ticket to freedom, exclusive events, and real-time updates. Welcome to the fight.";
 
 const lightThemePlaylistVideoSrc = "https://www.youtube.com/embed/kirdmu-hm4A";
 const lightThemeImages = ["narrator1.jpeg", "narrator2.jpg", "narrator3.jpg"];
 const lightThemeAboutText = "Hello, I'm just an average guy, dragged into extraordinary circumstances. By day, I'm a cog in the corporate machine, but by night, my life takes on a darker shade, thanks to my alter ego.";
 const lightThemePhotosText = "Here are moments of my life, caught between the mundane daylight and the thrilling, yet terrifying nights. These photos capture the dual nature of my existence.";
 const lightThemePlaylistText = "Listen to the melodies that narrate my double life. Each song reflects the internal battle and the quiet desperation of a man caught in his own duality.";
-const lightThemeLikeText = "Connect with the quieter side of life at MyQuietDesperation.com. It's a place for those who seek understanding in the quieter, introspective moments of life.";
+const lightThemeLikeText = "Connect with the quieter side of life. It's a place for those who seek understanding in the quieter, introspective moments of life.";
 const lightThemeQrText = "Scan here to access a world of introspection, articles on self-discovery, and resources to help you balance the chaos of dual existence.";
 
 
